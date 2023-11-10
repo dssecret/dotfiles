@@ -1,6 +1,6 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
-vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>')
+vim.keymap.set('n', '<Space>', '<Nop>', {silent=true, remap=false})
 
 -- Install lazy package manager
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
